@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login and Signup</title>
+        <link rel="stylesheet" href="css/styles.css" />
+        <script src="js/set_cookies.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <a href="index.html" class="logo">Online Recipe Collection</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="browse_recipes.html">Browse Recipes</a></li>
+                    <li><a href="my_collection.html">My Collection</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="checklist.html">Checklist</a></li>
+                </ul>
+                <button class="login-btn">Login/Signup</button>
+            </nav>
+        </header>
+        <main>
+            <div class="login-signup-container">
+                <div class="login-form">
+                    <h2>Login</h2>
+                    <form action="php/login.php" method="POST">
+                        <label for="login-username">Username:</label>
+                        <input
+                            type="text"
+                            id="login-username"
+                            name="username"
+                            required
+                        />
+                        <label for="login-password">Password:</label>
+                        <input
+                            type="password"
+                            id="login-password"
+                            name="password"
+                            required
+                        />
+                        <input type="submit" value="Login" />
+                    </form>
+                </div>
+                <div class="signup-form">
+                    <h2>Signup</h2>
+                    <form action="php/signup.php" method="POST">
+                        <label for="signup-username">Username:</label>
+                        <input
+                            type="text"
+                            id="signup-username"
+                            name="username"
+                            required
+                        />
+                        <label for="signup-password">Password:</label>
+                        <input
+                            type="password"
+                            id="signup-password"
+                            name="password"
+                            required
+                        />
+                        <label for="signup-email">Email:</label>
+                        <input
+                            type="email"
+                            id="signup-email"
+                            name="email"
+                            required
+                        />
+                        <input type="submit" value="Signup" />
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2023 Online Recipe Collection. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
